@@ -1,0 +1,1373 @@
+/* Root settings for theme and typography */
+:root {
+    --text-color1: #000000;
+    --text-color2: #0E4894;
+    --text-color3: #ffffff;
+    --primary-bg-color: #F6FBFF;
+    --secondary-bg-color: #F4C82B;
+    --tetiary-bg-color: #4BD3DF;
+    --general-font-family: Helvetica, Arial, sans-serif;
+}
+
+.main {
+    font-family: var(--general-font-family);
+    font-size: 18px;
+    background-color: var(--primary-bg-color);
+}
+
+/* Reusable classes */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular-header {
+    background-color: var(--tetiary-bg-color);
+    width: 100%;
+    margin: auto;
+    height: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding-top: 10px;
+    font-weight: 500;
+    color: var(--text-color2);
+}
+
+#mobile-nav {
+    display: none;
+}
+
+/* General headers section for all pages */
+#menu-btn {
+    display: none;
+}
+.main-section {
+    margin-top: -8px;
+}
+.general-header {
+    background: linear-gradient(90deg, #f0f5f8, #68a2bd, #4a8bab, #147bab);
+    height: 90px;
+    justify-content: space-between;
+    border: none;
+    border-radius: 2px;
+}
+
+.malinenergy-logo {
+    position: relative;
+    left: 5px;
+}
+
+.logo {
+    width: auto;
+    height: 100%;
+    mix-blend-mode: darken;
+}
+
+.search-box {
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 10px;
+}
+
+.search-input, .search-icon {
+    height: 30px;
+}
+
+.search-input {
+    display: none;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    background-color: #9db8c5;
+    text-align: center;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-icon {
+    cursor: pointer;
+    mix-blend-mode: darken;
+}
+
+.search-icon:hover {
+    transform: scale(1.3);
+}
+
+/* General nav section */
+.general-nav {
+    position: relative;
+    top: -10px;
+    width: 60vw;
+    margin: auto;
+    height: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    z-index: 100;
+}
+
+.general-nav ul {
+    margin-left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.general-nav ul li {
+    list-style: none;
+    width: 100%;
+    height: 79%;
+    margin-left: -10px;
+    padding-top: 7px;
+    position: relative;
+    left: -40px;
+    border: solid #dae8ee 0.5px;
+    background-color: var(--primary-bg-color);
+}
+
+.general-nav ul li:hover {
+    border: solid #549FC3 2px;
+    transform: scale(1.02);
+}
+
+.general-nav ul li a {
+    text-decoration: none;
+    color: var(--text-color2);
+}
+
+.general-nav ul li a:visited {
+    color: var(--text-color2);
+}
+
+.general-nav ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+#home-background-container {
+    position: relative;
+    top: -50px;
+}
+#home-background-img {
+    width: 100%;
+    height: 570px;
+    border: none;
+    border-radius: 5px;
+    mix-blend-mode: darken;
+}
+#home-background-txt {
+    color: var(--text-color3);
+    font-size: 50px;
+    font-weight: 300;
+    position: absolute;
+    top: 60px;
+    left: 35px;
+    letter-spacing: 20px;
+}
+#slogan {
+    background-color: var(--primary-bg-color);
+    position: absolute;
+    top: 514px;
+    height: 30px;
+    padding: 8px 25px 0px 7px;
+    border-top-right-radius: 50px;
+}
+
+/* Homepage services showcase */
+#home-service-showcase {
+    position: relative;
+    top: -65px;
+}
+
+.showcase-title-top-container {
+    height: 320px;
+}
+
+#home-showcase-items {
+    height: 320px;
+    position: relative;
+    top: 57px;
+}
+
+#home-showcase-items div {
+    position: relative;
+    top: -23px;
+}
+#home-showcase-title {
+    width: 76%;
+    height: 320px;
+    margin-right: 0px;
+}
+#home-showcase-title h1 {
+    background: var(--tetiary-bg-color);
+    border: none;
+    height: 70px;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 900;
+    color: var(--text-color2);
+    letter-spacing: 3px;
+}
+
+#home-showcase-title div {
+    background: var(--secondary-bg-color);
+    border: none;
+    border-radius: 10px;
+    height: 185.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -27px;
+}
+
+#home-showcase-title div h4 {
+    padding: 25px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.home-showcase-item {
+    position: relative;
+    top: 22px;
+    height: 100%;
+    width: 25%;
+}
+
+.home-showcase-item2 {
+    height: 100%;
+    width: 25%;
+}
+.home-showcase-item-img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    mix-blend-mode: darken;
+}
+
+.home-showcase-item-title {
+    position: relative;
+    left: 2%;
+    bottom: 105%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: var(--text-color3);
+    font-size: larger;
+}
+
+.home-showcase-item-action {
+    position: relative;
+    bottom: 36.2%;
+    background-color: var(--primary-bg-color);
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    color: var(--text-color2);
+    text-decoration: none;
+}
+
+/* Home team showcase */
+
+#home-team-showcase {
+    width: 100% !important;
+    position: relative;
+    top: -20px;
+}
+
+.home-team-showcase-item {
+    width: 25%;
+    height: 320px;
+}
+
+#home-team-showcase p {
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    color: var(--text-color2);
+}
+
+.home-team-showcase-item img {
+    width: 85%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    mix-blend-mode: darken;
+    cursor: pointer;
+}
+
+.home-team-showcase-item h4, .home-team-showcase-item small, .home-team-showcase-item a {
+    position: relative;
+    left: -15px;
+}
+
+.home-team-showcase-item h4 {
+    font-size: larger;
+    color: var(--text-color2);
+}
+
+.home-team-showcase-item small {
+    position: relative;
+    top: -20px;
+    text-overflow: clip;
+    font-size: 17px;
+}
+
+.home-team-showcase-item a {
+    background-color: var(--tetiary-bg-color);
+    height: 33px;
+    width: 55%;
+    margin: auto;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.home-team-showcase-item a:visited {
+    text-decoration: none;
+}
+
+/* General footer section */
+.general-footer {
+    position: relative;
+    top: 80px;
+    height: 120px !important;
+    width: 100%;
+    background-color: #549FC3;
+    color: var(--text-color3);
+}
+
+.home-footer {
+    position: relative;
+    top: 95px;
+}
+
+.service-footer {
+    top: 10px;
+}
+
+.contact-footer {
+    margin-top: 15px;
+}
+
+.footer-contact-icons-links {
+    justify-content: space-between;
+    margin: auto 5% auto 5%;
+    padding-top: 20px;
+}
+
+.footer-contact-icons-links div {
+    height: 35%;
+}
+
+.contact-info-icons {
+    height: 40px;
+    width: 40px;
+    mix-blend-mode: darken;
+}
+
+.contact-info-icons:hover {
+    transform: scale(1.1);
+}
+
+.footer-link {
+    color: var(--text-color3);
+    text-decoration: none;
+}
+
+.footer-link:visited {
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+
+/* This section contains all style for the service page */
+.service-section {
+    margin-bottom: 0px;
+    width: 100%;
+}
+.services-section {
+    margin-bottom: -70px;
+    width: 100%;
+}
+.main-headers {
+    background-color: var(--tetiary-bg-color);
+    width: 80%;
+    margin: -10px auto auto auto;
+    height: 55px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding-top: 7px;
+    font-weight: 800;
+    color: var(--text-color2);
+    letter-spacing: 5px;
+    font-size: xx-large;
+    box-shadow: 0px 4px #549FC3;
+}
+
+#service-items {
+    margin-top: 9px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-item {
+    height: 350px;
+    width: 100%;
+    margin: auto;
+    gap: 15px
+}
+
+.service-item div {
+    height: 100%;
+    background-color: var(--secondary-bg-color);
+    border: none;
+    border-radius: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+    overflow: hidden;
+}
+
+.service-details {
+    width: 30%;
+}
+
+.service-item div h3 {
+    text-align: center;
+    height: 12%;
+    background-color: var(--tetiary-bg-color);
+    position: relative;
+    top: -25px;
+    margin-left: -6.3%;
+    margin-right: -6.3%;
+    padding-top: 15px;
+    border-radius: 5px;
+    color: var(--text-color2);
+    font-size: x-large;
+    font-weight: 500;
+    box-shadow: 0px 3px #549FC3;
+}
+
+.service-item-description {
+    margin-top: 4%;
+    letter-spacing: 2px;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38%;
+    text-align: center;
+}
+
+.service-item-action {
+    background-color: var(--tetiary-bg-color);
+    text-decoration: none;
+    margin-left: 50%;
+    width: 120px;
+    height: 8%;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 20px;
+    text-align: right;
+    float: right;
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    right: -3.5%;
+    bottom: -12.4%;
+}
+
+.service-item-action a {
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.service-img-container {
+    width: 70%;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.service-item div a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--text-color2);
+}
+
+.service-item div a:hover {
+    text-decoration: none;
+    color: var(--text-color2);
+}
+
+.service-item div a img {
+    width: 111.5%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service-item div a img:hover {
+    transform: scale(1.005);
+}
+
+.shift-left {
+    margin-left: -35px;
+}
+
+/* This section contains all style for the projects page */
+#project-items {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    width: 100%;
+}
+
+#projects-section-description {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: larger;
+}
+
+#project-items img {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    mix-blend-mode: darken;
+}
+
+#project-items img:hover {
+    transform: scale(1.005);
+}
+
+.projects-footer {
+    top: 12px;
+}
+
+/* This section contains all style for the team page */
+#team-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    position: relative;
+    top: 20px;
+}
+
+.team-item {
+    width: 100%;
+    height: 400px;
+    gap: 2%;
+}
+
+.team-item img {
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    mix-blend-mode: darken;
+    cursor: pointer;
+    box-shadow: -4px 4px #549FC3;
+}
+
+.team-item div {
+    width: 58%;
+    height: 70%;
+    text-align: center;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 50px;
+}
+
+.team-member-info {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px #549FC3;
+    font-size: larger;
+    letter-spacing: 1.6px;
+    line-height: 28px;
+}
+
+.team-member-info div h2 {
+    margin-top: -8px;
+}
+
+.team-member-info div p {
+    width: 140%;
+    margin-left: -20%;
+}
+
+.team-footer {
+    position: relative;
+    top: 30px;
+}
+
+/* This section contains all style for the about page */
+#about-section {
+    position: relative;
+    top: -45px;
+}
+
+#about-section p {
+    width: 97%;
+    margin: auto;
+    text-align: left;
+    margin: 10px auto 10px auto;
+    line-height: 30px;
+    font-size: larger;
+    position: relative;
+}
+
+.about-page-team-showcase {
+    margin-top: -25px;
+}
+
+.about-footer {
+    top: 90px;
+}
+
+/* This section contains all style for the various service pages */
+.services-section {
+    margin-top: -65px;
+}
+
+#service-main-header {
+    height: 45px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: -5px;
+}
+
+.services-section h1 {
+    background-color: var(--tetiary-bg-color);
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding-top: 20px;
+    font-weight: 500;
+    color: var(--text-color2);
+    letter-spacing: 5px;
+    font-size: x-large;
+    font-weight: 600;
+    box-shadow: 0px 4px #549FC3;
+}
+
+.services-section p {
+    margin-left: 3px;
+    margin-right: 3px;
+    text-align: justify;
+    font-size: larger;
+}
+
+.services-section img {
+    width: 100%;
+    height: 570px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* This section contains all style for contact page */
+#contact-us {
+    color: var(--text-color2);
+    position: relative;
+    top: -43px;
+}
+
+#contact-us p {
+    text-align: center;
+    font-size: larger;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-label {
+    width: 20%;
+    margin-left: 100px;
+}
+
+.input-field {
+    width: 80%;
+    height: 30px;
+    margin-right: 100px;
+    border: solid var(--tetiary-bg-color) 1px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #525151;
+    padding-left: 10px;
+}
+
+#message {
+    height: 70px;
+}
+
+.input-field:focus {
+    outline: none;
+}
+
+#submit {
+    width: 10%;
+    margin: auto;
+    height: 40px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--tetiary-bg-color);
+    color: var(--text-color2);
+    cursor: pointer;
+    font-size: larger;
+}
+
+#submit:hover {
+    transform: scale(1.03);
+}
+
+#success-msg {
+    width: 30%;
+    height: 100px;
+    font-size: larger;
+    color: #ffffff;
+    position: absolute;
+    top: -155px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    display: none;
+}
+
+/* 
+This section contains all media queries that makes the website
+                for different clients screens...
+*/
+@media only screen and (max-width: 1024px) {
+    /* This section contains all style for the team page */
+    #team-items {
+        width: 100%;
+    }
+
+    .team-member-info {
+        font-size: large;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+
+    .home-showcase-item-title {
+        font-size: 15px;
+    }
+
+    .home-team-showcase-item img {
+        left: 35px;
+        width: 100%;
+        height: 80%;
+    }
+
+    .home-team-showcase-item h4 {
+        font-size: large;
+    }
+
+    .home-showcase-item-action {
+        bottom: 28.5%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    /* Reusable classes */
+    .flex-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu-btn {
+        display: inline;
+        margin-right: 3px;
+        height: 45px;
+        width: 45px;
+        mix-blend-mode: darken;
+    }
+
+    #menu-btn:hover {
+        transform: scale(1.1);
+    }
+
+    #mobile-nav {
+        display: none;
+        width: 80%;
+        height: 100vh;
+        margin-left: 8.5%;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: absolute;
+        top: 77px;
+        z-index: 100;
+        background-color: #0DB8C7;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #mobile-search-container {
+        margin-top: 7px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mobile-search-input {
+        border-style: none;
+        border-radius: 25px;
+        width: 80%;
+        height: 25px;
+        text-align: center;
+    }
+
+    .mobile-search-input:focus {
+        outline: none;
+    }
+
+    .mobile-search-input:hover {
+        transform: scale(1.1);
+    }
+
+    #mobile-nav div hr {
+        background-color: #ffffff;
+        height: 2px;
+    }
+
+    .mobile-foot-nav-link {
+        text-decoration: none;
+        color: var(--text-color2);
+    }
+
+    .mobile-foot-nav-link:visited {
+        text-decoration: none;
+        color: var(--text-color2);
+    }
+
+    #mobile-nav-foot {
+        position: relative;
+        top: 250px;
+    }
+
+    #mobile-nav-foot div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* General headers section for all pages */
+    .main {
+        width: 95.5vw;
+    }
+
+    .service-main {
+        width: 96.5vw;
+    }
+    .general-header {
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .search-input {
+        width: 140px;
+    }
+
+    .logo {
+        width: 70%;
+        transform: scale(1.1);
+    }
+
+    .search-input {
+        position: relative;
+    }
+
+    /* Home section */
+    .general-nav {
+        display: none;
+    }
+
+    #home-background-container {
+        position: relative;
+        top: 7px;
+    }
+
+    #home-background-img {
+        height: 400px;
+    }
+
+    #home-background-txt {
+        font-size: 28px;
+        top: 25px;
+        left: 10px;
+        letter-spacing: 10px;
+    }
+
+    #slogan {
+        width: 80%;
+        top: 332.5px;
+        height: auto;
+    }
+
+    /* Home service showcase */
+    .showcase-title-top-container {
+        width: 100%;
+    }
+
+    #home-showcase-title {
+        width: 100%;
+    }
+
+    #home-showcase-title div h4 {
+        padding: 10px;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    #home-showcase-title h1 {
+        letter-spacing: 0px;
+    }
+    
+    #home-service-showcase {
+        width: 100%;
+        position: relative;
+        top: -5px;
+    }
+
+    #home-showcase-items div {
+        top: 304px;
+    }
+
+    .home-showcase-item-title {
+        font-size: larger;
+    }
+
+    .home-showcase-item, .home-showcase-item2 {
+        width: 100%;
+    }
+
+    .home-showcase-item-action {
+        bottom: 36.2%;
+    }
+
+    /* Home team showcase */
+    #home-team-showcase {
+        top: 1380px;
+    }
+
+    .home-team-showcase-item {
+        width: 100%;
+        height: 340px;
+        position: relative;
+        margin-top: 29%;
+    }
+
+    .home-team-showcase-item img {
+        position: relative;
+        left: 35px;
+        width: 83%;
+        height: 90%;
+    }
+
+    .home-team-showcase-item h4, .home-team-showcase-item small, .home-team-showcase-item a {
+        position: relative;
+        left: 5px;
+    }
+    .home-team-showcase-item h4 {
+        font-size: larger;
+    }
+
+    .home-team-showcase-item1 {
+        margin-top: -20px;
+    }
+
+    /* This section contains all the mobile styles for service page */
+    .mobile-service-nav {
+        position: absolute;
+        right: 1.5%;
+    }
+
+    #mobile-service-search-icon {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: -3px;
+    }
+
+    #mobile-service-info-container {
+        height: 40px;
+    }
+
+    #mobile-service-info-container a img {
+        height: 40px;
+        width: 40px;
+    }
+
+    #service-main-header {
+        width: 101%;
+        font-size: large;
+        position: relative;
+        height: 45px;
+        padding-top: 15px;
+        padding-bottom: -65px;
+        top: 17px;
+        left: 1.8px;
+        font-weight: 800;
+    }
+
+    #services-header {
+        width: 100%;
+        margin: -10px auto auto auto;
+        height: 45px;
+        padding-top: 10px;
+        font-weight: 600;
+        font-size: xx-large;
+        position: relative;
+        right: -4.1px;
+    }
+
+    #service-items {
+        margin-top: 10px;
+        gap: 10px;
+        position: relative;
+        top: 15px;
+        left: 1.5px;
+    }
+
+    .service-item {
+        height: auto;
+        width: 100%;
+        gap: 0px;
+        border: solid #549FC3 2px;
+        border-radius: 5px;
+    }
+
+    .service-item div {
+        height: auto;
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        border-radius: 0px;
+    }
+
+    .service-item div h3 {
+        height: 15px;
+        top: -25px;
+        margin-left: -6.3%;
+        margin-right: -6.3%;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        font-size: x-large;
+    }
+
+    .service-item-description {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: larger;
+    }
+
+    .service-item a {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-item a img {
+        margin-bottom: -5.7px;
+        border-radius: 2px;
+        position: relative;
+        left: -2px;
+    }
+
+    .service-item-action {
+        margin-left: 0%;
+        width: 93.613%;
+        height: 35px;
+        padding-bottom: 10px;
+        position: relative;
+        right: 0%;
+        left: 0px;
+        bottom: -20px;
+        border-top-right-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .service-item-action a {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: x-large;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    /* This section contains all style for the projects page */
+    .project-section #mobile-nav {
+        right: 0px;
+        top: -5.5px;
+        z-index: 101;
+    }
+    .project-section {
+        position: relative;
+        top: 15px;
+    }
+    .mobile-project-main-header {
+        width: 100%;
+        font-weight: 800;
+        font-size: large;
+    }
+
+    #projects-section-description {
+        width: 99%;
+        text-align: justify;
+        font-size: larger;
+    }
+
+    #project-items {
+        grid-template-columns: auto;
+    }
+
+    /* This section contains all style for the team page */
+    .mobile-team-main-header {
+        margin-top: 15px;
+        width: 100%;
+        font-size: larger;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    #team-items {
+        gap: 1px;
+        width: 100%;
+        top: -15px;
+    }
+
+    .team-item {
+        gap: 0%;
+        margin-top: 40px;
+        height: auto;
+        padding: 5px 5px 0px 5px;
+        border: solid #549FC3 0.5px;
+        border-radius: 50px;
+        box-shadow: 0px -2px #549FC3;
+    }
+
+    .team-item img {
+        width: auto;
+        height: 100%;
+    }
+
+    .team-item div {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        border-radius: 0px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    .team-member-info {
+        margin-top: 10px;
+        width: 100%;
+        box-shadow: 0px 0px #549FC3;
+        font-size: large;
+        letter-spacing: 1px;
+        line-height: 25px;
+    }
+
+    .team-member-info div {
+        height: 200px;
+    }
+
+    .team-member-info div h2 {
+        margin-top: 10px;
+    }
+    
+    .team-member-info div p {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: -10px;
+    }
+
+    /* This section contains all style for the about page */
+    #about-section {
+        top: 10px;
+    }
+
+    #about-section p {
+        text-align: center;
+    }
+
+    .about-page-team-showcase {
+        margin-top: -1365px;
+    }
+
+    .about-footer {
+        top: 90px;
+    }
+
+    /* This section contains all style for the various service pages */
+    .service-section {
+        margin-top: -8px;
+        margin-left: -5.5px;
+        width: 100%;
+    }
+
+    .services-section {
+        margin-top: -8px;
+        margin-left: -5.5px;
+        width: 100%;
+    }
+
+    .services-section h1 {
+        height: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        letter-spacing: 5px;
+        font-size: larger;
+        position: relative;
+        left: 6px;
+    }
+
+    .services-section p {
+        padding-left: 2px;
+        padding-right: 2px;
+        width: 100%;
+        font-size: 24px;
+        text-align: left;  
+    }
+
+    .services-section img {
+        width: 102%;
+        height: 350px;
+        margin-left: 2px;
+    }
+
+    /* This section contains all style for contact page */
+    #contact-us {
+        top: 10px;
+    }
+
+
+    .input-label {
+        width: auto;
+        margin-left: 0px;
+    }
+    
+    .input-field {
+        width: 96%;
+        margin: auto;
+        margin-right: 0px;
+        font-size: 16px;
+    }
+
+    #submit {
+        width: 50%;
+    }
+
+    .contact-team-showcase {
+        margin-top: -1375px;
+    }
+
+    #success-msg {
+        width: 80%;
+        height: 100px;
+        font-size: larger;
+        top: 50px;
+        right: 0px;
+    }
+
+    /* General footer section */
+    .general-footer {
+        top: 1490px;
+        height: auto !important;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    .service-footer {
+        top: 25px;
+        left: -2px;
+    }
+
+    .projects-footer {
+        top: 35px;
+    }
+
+    .team-footer {
+        top: 10px;
+    }
+
+    .sevices-footer {
+        top: 55px;
+    }
+
+    .footer-icons-mobile {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-links-mobile {
+        width: auto;
+        margin: auto 10px auto 10px;
+        font-size: 14.5px;
+        text-align: center;
+    }
+
+    .contact-footer {
+        top: 1485px;
+    }
+}
